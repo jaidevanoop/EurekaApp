@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: EurekaServer
+server:
+  port: 8000
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceurl:
+      defaultZone: http://localhost:8000/eureka #Add comma separated list of machines that you want to register with eureka
